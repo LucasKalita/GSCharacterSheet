@@ -1,4 +1,4 @@
 package org.example.equipment.armor;
 
-public class HeavyArmor extends Armor{
+public enum Material {
 }
