@@ -1,7 +1,6 @@
 package org.example.enums;
 
-public enum TypeOfArmor {
-    CLOTH,
+public enum WeightType {
     LIGHT,
     HEAVY
 }
