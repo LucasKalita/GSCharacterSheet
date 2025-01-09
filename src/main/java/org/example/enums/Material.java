@@ -4,5 +4,7 @@ public enum Material {
     IRON,
     STEEL,
     WOOD,
-    STONE
+    STONE,
+    WOOL,
+    LINEN
 }
