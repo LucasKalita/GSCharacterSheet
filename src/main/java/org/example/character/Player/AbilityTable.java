@@ -1,4 +1,4 @@
-package org.example.character;
+package org.example.character.Player;
 
 public class AbilityTable {
     // primary abilities

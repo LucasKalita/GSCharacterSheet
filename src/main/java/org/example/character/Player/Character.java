@@ -1,6 +1,7 @@
-package org.example.character;
+package org.example.character.Player;
 
-import org.example.character.enums.Race;
+import org.example.enums.Race;
+import org.example.enums.SpellCastSystem;
 import org.example.skills.adventurerSkills.CombatSkill;
 import org.example.skills.adventurerSkills.MagicSkill;
 import org.example.skills.generalSkills.GeneralSkill;
@@ -14,4 +15,5 @@ public class Character {
     List<GeneralSkill> generalSkillList;
     List<CombatSkill> combatSkillList;
     List<MagicSkill> magicSkillList;
+    List<SpellCastSystem> spellCastSystemList;
 }
