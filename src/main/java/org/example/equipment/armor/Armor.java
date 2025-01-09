@@ -1,19 +1,21 @@
 package org.example.equipment.armor;
 
-import org.example.equipment.armor.effects.Effect;
+import org.example.enums.Material;
+import org.example.enums.TypeOfArmor;
+import org.example.equipment.effects.ArmorEffect;
 
 import java.util.List;
 
 public class Armor {
-    boolean isCoreItem;
+    boolean isCore;
     String name;
-    Type type;
+    TypeOfArmor type;
     Material material;
     int armorScore;
     int dodgeModification;
     int movementModification;
     int value;
-    List<Effect> effectList;
+    List<ArmorEffect> effectList;
     String description;
 
 }
