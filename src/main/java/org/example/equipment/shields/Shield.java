@@ -1,4 +1,4 @@
 package org.example.equipment.shields;
 
-public class Shields {
+public class Shield {
 }
