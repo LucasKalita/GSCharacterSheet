@@ -12,4 +12,5 @@ public class Shield {
     Stealth stealth;
     int value;
     List <ArmorEffect> effectList;
+    String description;
 }
