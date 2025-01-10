@@ -1,6 +1,7 @@
 package org.example.equipment.armor;
 
 import org.example.enums.Material;
+import org.example.enums.Stealth;
 import org.example.enums.TypeOfArmor;
 import org.example.equipment.effects.ArmorEffect;
 
@@ -9,6 +10,7 @@ import java.util.List;
 public class Armor {
     boolean isCore;
     String name;
+    Stealth stealth;
     TypeOfArmor type;
     Material material;
     int armorScore;
