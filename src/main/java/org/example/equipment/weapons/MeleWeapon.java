@@ -1,4 +1,4 @@
 package org.example.equipment.weapons;
 
-public class MeleWeapons extends Weapons{
+public class MeleWeapon extends Weapon {
 }
