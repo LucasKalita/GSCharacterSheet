@@ -13,4 +13,5 @@ public enum TypeOfWeapons {
     THROWING,
     BOW,
     CROSSBOW,
+    NONE
 }
