@@ -1,5 +1,8 @@
 package org.example.equipment.effects;
 
-public class ArmorEffect {
+import java.awt.*;
 
+public class ArmorEffect {
+    String name;
+    String description;
 }
