@@ -20,6 +20,7 @@ public enum Checks {
     MAGIC_KNOWLEDGE,
     MEDITATION,
     THEOLOGY,
+    WORSHIP
 
 
 }
