@@ -21,8 +21,14 @@ public class DragonPriest extends CharacterClass {
                 true,
                 List.of(NONE),
                 List.of(TypeOfArmor.values()),
-                allowedChecks, level, spellCastSystem);
-
+                List.of(Checks.SPELL_MAINTENANCE,
+                        Checks.SPELL_USE,
+                        Checks.FIRST_AID,
+                        Checks.MONSTER_KNOWLEDGE,
+                        Checks.WORSHIP,
+                        Checks.THEOLOGY),
+                1,
+                SpellCastSystem.ANCESTRAL_DRAGON_ARTS);
 
 
     }
