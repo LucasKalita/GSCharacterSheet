@@ -1,5 +1,6 @@
 package org.example.character.Player;
 
+import org.example.character.characterClasses.CharacterClass;
 import org.example.enums.Race;
 import org.example.enums.SpellCastSystem;
 import org.example.equipment.weapons.Weapon;
@@ -14,7 +15,9 @@ public class Character {
     int age;
     Race race;
     int level;
+    AbilityTable abilityTable;
 
+    List<CharacterClass> characterClasses;
     List<GeneralSkill> generalSkillList;
     List<CombatSkill> combatSkillList;
     List<MagicSkill> magicSkillList;
