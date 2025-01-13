@@ -29,4 +29,36 @@ public class CharacterClass {
         this.level = level;
         this.spellCastSystem = spellCastSystem;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isCore() {
+        return isCore;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public List<TypeOfWeapons> getAllowedWeaponList() {
+        return allowedWeaponList;
+    }
+
+    public List<TypeOfArmor> getAllowedArmorList() {
+        return allowedArmorList;
+    }
+
+    public List<Checks> getAllowedChecks() {
+        return allowedChecks;
+    }
+
+    public SpellCastSystem getSpellCastSystem() {
+        return spellCastSystem;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
 }
