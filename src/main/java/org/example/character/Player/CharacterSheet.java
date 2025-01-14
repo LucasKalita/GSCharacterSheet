@@ -20,7 +20,7 @@ public class CharacterSheet {
     int advancementPoints;
     int lifeForce ;
     int doubleLifeForce;
-    BackgroundRolls backgroundRolls;
+    Background background;
     AbilityTable abilityTable;
     List<CharacterClass> characterClasses;
     List<GeneralSkill> generalSkillList;
