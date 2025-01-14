@@ -1,6 +1,9 @@
 package org.example.character.characterClasses;
 
-import org.example.enums.*;
+import org.example.enums.Checks;
+import org.example.enums.SpellCastSystem;
+import org.example.enums.TypeOfArmor;
+import org.example.enums.TypeOfWeapons;
 
 import java.util.List;
 
@@ -27,7 +30,9 @@ public class Fighter extends CharacterClass {
                         TypeOfWeapons.LIGHT_SPEAR,
                         TypeOfWeapons.HEAVY_SPEAR),
                 List.of(TypeOfArmor.values()),
-                List.of(Checks.DODGE, Checks.HIT, Checks.BLOCK),
+                List.of(Checks.DODGE,
+                        Checks.HIT,
+                        Checks.BLOCK),
                 1,
                 SpellCastSystem.NONE);
     }
