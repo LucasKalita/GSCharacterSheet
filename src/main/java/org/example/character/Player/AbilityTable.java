@@ -1,15 +1,13 @@
 package org.example.character.Player;
 
 public class AbilityTable {
-    // primary abilities
-    int strength;
-    int psyche;
-    int technique;
-    int intelligence;
-    // secondary abilities
-    int focus;
-    int reflex;
-    int endurance;
+   private int strength;
+   private int psyche;
+   private int technique;
+   private int intelligence;
+   private int focus;
+   private int reflex;
+   private int endurance;
 
     public AbilityTable(int strength, int psyche, int technique, int intelligence, int focus, int reflex, int endurance) {
         this.strength = strength;
