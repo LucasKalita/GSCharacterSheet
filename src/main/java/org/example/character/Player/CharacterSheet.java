@@ -18,10 +18,11 @@ public class CharacterSheet {
   protected int experiencePoints;
   protected int cumulativeExperiencePoints;
   protected int advancementPoints;
+  protected int money;
+  protected int wounds;
   protected int lifeForce ;
-  protected int doubleLifeForce;
   protected Background background;
-  protected AbilityTable abilityTable;
+  protected static AbilityTable abilityTable;
   protected List<CharacterClass> characterClasses;
   protected List<GeneralSkill> generalSkillList;
   protected List<CombatSkill> combatSkillList;
@@ -32,24 +33,60 @@ public class CharacterSheet {
     public CharacterSheet() {
     }
 
-    public CharacterSheet(String name, Race race, int age, int level, int experiencePoints, int cumulativeExperiencePoints, int advancementPoints, int lifeForce, int doubleLifeForce, Background background, AbilityTable abilityTable, List<CharacterClass> characterClasses, List<GeneralSkill> generalSkillList, List<CombatSkill> combatSkillList, List<MagicSkill> magicSkillList, List<Weapon> weaponsList, List<Item> equipment) {
+    public CharacterSheet(String name,
+                          Race race,
+                          int age,
+                          int level,
+                          int experiencePoints,
+                          int cumulativeExperiencePoints,
+                          int advancementPoints,
+                          int lifeForce,
+                          Background background,
+                          AbilityTable abilityTable,
+                          List<CharacterClass> characterClasses,
+                          List<GeneralSkill> generalSkillList,
+                          List<CombatSkill> combatSkillList,
+                          List<MagicSkill> magicSkillList,
+                          List<Weapon> weaponsList,
+                          List<Item> equipment) {
         this.name = name;
         this.race = race;
         this.age = age;
-        this.level = level;
-        this.experiencePoints = experiencePoints;
-        this.cumulativeExperiencePoints = cumulativeExperiencePoints;
-        this.advancementPoints = advancementPoints;
-        this.lifeForce = lifeForce;
-        this.doubleLifeForce = doubleLifeForce;
+        this.level = 1;
+        this.experiencePoints = 3000;
+        this.cumulativeExperiencePoints = 3000;
+        this.advancementPoints = 10;
+        this.lifeForce = countLifeForce();
         this.background = background;
-        this.abilityTable = abilityTable;
+        CharacterSheet.abilityTable = abilityTable;
         this.characterClasses = characterClasses;
         this.generalSkillList = generalSkillList;
         this.combatSkillList = combatSkillList;
         this.magicSkillList = magicSkillList;
         this.weaponsList = weaponsList;
         this.equipment = equipment;
+    }
+    private int countLifeForce(){
+        return abilityTable.getEndurance() +
+                abilityTable.getPsyche() +
+                abilityTable.getStrength() +
+                background.getLifeForceThrow();
+    }
+
+    public int getWounds() {
+        return wounds;
+    }
+
+    public void setWounds(int wounds) {
+        this.wounds = wounds;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public String getName() {
@@ -116,13 +153,6 @@ public class CharacterSheet {
         this.lifeForce = lifeForce;
     }
 
-    public int getDoubleLifeForce() {
-        return doubleLifeForce;
-    }
-
-    public void setDoubleLifeForce(int doubleLifeForce) {
-        this.doubleLifeForce = doubleLifeForce;
-    }
 
     public Background getBackground() {
         return background;
@@ -137,7 +167,7 @@ public class CharacterSheet {
     }
 
     public void setAbilityTable(AbilityTable abilityTable) {
-        this.abilityTable = abilityTable;
+        CharacterSheet.abilityTable = abilityTable;
     }
 
     public List<CharacterClass> getCharacterClasses() {
