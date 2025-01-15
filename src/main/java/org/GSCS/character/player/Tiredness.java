@@ -1,4 +1,4 @@
-package org.GSCS.character.Player;
+package org.GSCS.character.player;
 
 public class Tiredness {
    private int fatigue;
